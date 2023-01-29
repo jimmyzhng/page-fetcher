@@ -1,11 +1,12 @@
 // Page Fetcher: download resource at the url to the path on your machine
 
 let url = process.argv[2];
-// local file path
 let filePath = process.argv[3];
 
 const request = require('request');
 const fs = require('fs');
+const readline = require('readline');
+const rl = readline.createInterface(process.stdin, process.stdout);
 
 
 // Make an http request
